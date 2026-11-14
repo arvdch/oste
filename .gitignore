@@ -1,0 +1,20 @@
+# Secrets & Environment Variables (NEVER commit)
+.env
+.env.*
+!.env.example
+
+# Dependencies & Runtime Cache
+node_modules/
+.cache/
+
+# Generated Per-Run Reports (keep benchmark summary e2e-results.json)
+reports/*.pdf
+reports/oste-*.json
+
+# Logs & OS/Editor Files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

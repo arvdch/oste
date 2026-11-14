@@ -1,0 +1,39 @@
+{
+  "name": "oste",
+  "version": "1.1.0",
+  "description": "OSTE - Open Source Tool Evaluation: Automated security risk assessment for open source tools and freeware",
+  "main": "server/index.js",
+  "bin": {
+    "oste": "./cli/oste.js"
+  },
+  "scripts": {
+    "dev": "node server/index.js",
+    "start": "NODE_ENV=production node server/index.js",
+    "cli": "node cli/oste.js",
+    "test": "node test-scorer.js",
+    "test:e2e": "node tests/e2e.js"
+  },
+  "keywords": [
+    "security",
+    "open-source",
+    "risk-assessment",
+    "vulnerability",
+    "CVE",
+    "EPSS"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "axios": "^1.7.7",
+    "groq-sdk": "^0.8.0",
+    "pdfkit": "^0.15.0",
+    "commander": "^12.1.0",
+    "chalk": "^5.3.0",
+    "ora": "^8.1.0",
+    "cli-table3": "^0.6.5",
+    "semver": "^7.6.3",
+    "uuid": "^10.0.0"
+  }
+}

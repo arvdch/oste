@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSTE — Open Source Tool Evaluation</title>
+  <meta name="description" content="Automated security risk assessment platform for open source tools and freeware. Evaluate repositories, analyze vulnerabilities, and generate compliance reports." />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- ============ Header ============ -->
+    <header class="header" id="header">
+      <div class="logo">
+        <div class="logo-icon">🛡</div>
+        <div class="logo-text">
+          <h1>OSTE</h1>
+          <p>Open Source Tool Evaluation</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="header-btn" id="btnHistory" title="Recent analyses">
+          📋 History
+        </button>
+        <a class="header-btn" href="https://github.com" target="_blank" rel="noopener">
+          ⚙️ Docs
+        </a>
+      </div>
+    </header>
+
+    <!-- ============ API Status ============ -->
+    <div class="api-status" id="apiStatus"></div>
+
+    <!-- ============ Hero / Search ============ -->
+    <section class="hero" id="heroSection">
+      <h2>Can You Trust It?</h2>
+      <p>
+        Enter a GitHub repository, download URL, or file hash.<br />
+        OSTE will analyze security, project health, vulnerabilities, and deliver a risk verdict.
+      </p>
+
+      <div class="search-container">
+        <div class="search-box" id="searchBox">
+          <div class="search-icon">🔍</div>
+          <input
+            class="search-input"
+            id="searchInput"
+            type="text"
+            placeholder="e.g. facebook/react, https://example.com/tool.exe, or SHA256 hash"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button class="search-btn" id="searchBtn">
+            <span id="btnText">Analyze</span>
+            <div class="spinner" id="btnSpinner" style="display:none"></div>
+          </button>
+        </div>
+
+        <div class="type-selector" id="typeSelector">
+          <button class="type-btn active" data-type="auto">🔄 Auto-detect</button>
+          <button class="type-btn" data-type="opensource">📦 Open Source</button>
+          <button class="type-btn" data-type="freeware">💾 Freeware</button>
+        </div>
+
+        <div class="input-hints">
+          <button class="hint-chip" data-value="facebook/react">facebook/react</button>
+          <button class="hint-chip" data-value="expressjs/express">expressjs/express</button>
+          <button class="hint-chip" data-value="pallets/flask">pallets/flask</button>
+          <button class="hint-chip" data-value="axios/axios">axios/axios</button>
+          <button class="hint-chip" data-value="lodash/lodash">lodash/lodash</button>
+          <button class="hint-chip" data-value="275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f" title="EICAR antivirus test file (harmless)">EICAR test hash</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Progress ============ -->
+    <section class="progress-section" id="progressSection">
+      <div class="progress-card">
+        <div class="progress-header">
+          <h3 id="progressTitle">Analyzing...</h3>
+          <span class="progress-pct" id="progressPct">0%</span>
+        </div>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="progressBar" style="width: 0%"></div>
+        </div>
+        <div class="progress-step" id="progressStep">
+          <div class="step-icon"></div>
+          <span id="progressStepText">Initializing...</span>
+        </div>
+        <div class="progress-steps-list" id="progressSteps"></div>
+      </div>
+    </section>
+
+    <!-- ============ Error ============ -->
+    <div class="error-card" id="errorCard">
+      <h3>⚠️ Analysis Failed</h3>
+      <p id="errorMessage">An unexpected error occurred.</p>
+      <button class="retry-btn" id="retryBtn">Try Again</button>
+    </div>
+
+    <!-- ============ Results ============ -->
+    <section class="results-section" id="resultsSection">
+
+      <!-- Risk Score Hero -->
+      <div class="risk-hero animate-in" id="riskHero">
+        <div class="risk-gauge" id="riskGauge">
+          <svg viewBox="0 0 120 120">
+            <circle class="track" cx="60" cy="60" r="52" />
+            <circle class="fill" id="gaugeFill" cx="60" cy="60" r="52"
+              stroke-dasharray="326.73"
+              stroke-dashoffset="326.73" />
+          </svg>
+          <div class="score-text">
+            <div class="score-number" id="scoreNumber">--</div>
+            <div class="score-label" id="scoreLabel">RISK</div>
+          </div>
+        </div>
+        <div class="risk-info">
+          <h3 id="riskTitle">Security Assessment</h3>
+          <div class="risk-target" id="riskTarget">—</div>
+          <div class="decision-badge" id="decisionBadge">—</div>
+          <div class="executive-summary" id="executiveSummary">—</div>
+          <div class="risk-actions" id="riskActions">
+            <a class="risk-action-btn primary" id="downloadPdf" href="#" download>📄 Download PDF</a>
+            <a class="risk-action-btn" id="downloadJson" href="#" download>📋 Download JSON</a>
+            <button class="risk-action-btn" id="newAnalysisBtn">🔄 New Analysis</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Grid -->
+      <div class="dashboard-grid" id="dashboardGrid">
+
+        <!-- Risk Components -->
+        <div class="card animate-in delay-1" id="cardComponents">
+          <div class="card-header">
+            <div class="card-title"><span class="icon">📊</span> Risk Breakdown</div>
+          </div>
+          <div class="component-scores" id="componentScores"></div>
+        </div>
+
+        <!-- Vulnerability Summary -->
+        <div class="card animate-in delay-2" id="cardVulns">
+          <div class="card-header">
+            <div class="card-title"><span class="icon">🔓</span> Vulnerabilities</div>
+            <span class="card-badge" id="vulnBadge" style="display:none">0</span>
+          </div>
+          <div class="vuln-stats" id="vulnStats"></div>
+          <div class="vuln-list" id="vulnList"></div>
+        </div>
+
+        <!-- Repository Info / Tool Info -->
+        <div class="card animate-in delay-1" id="cardInfo">
+          <div class="card-header">
+            <div class="card-title"><span class="icon">📦</span> <span id="infoTitle">Project Info</span></div>
+          </div>
+          <div class="info-grid" id="infoGrid"></div>
+        </div>
+
+        <!-- Languages -->
+        <div class="card animate-in delay-2" id="cardLanguages" style="display:none">
+          <div class="card-header">
+            <div class="card-title"><span class="icon">🧬</span> Languages</div>
+          </div>
+          <div class="lang-bar" id="langBar"></div>
+          <div class="lang-legend" id="langLegend"></div>
+        </div>
+
+        <!-- Health Checks -->
+        <div class="card animate-in delay-3" id="cardHealth" style="display:none">
+          <div class="card-header">
+            <div class="card-title"><span class="icon">💚</span> Health Checks</div>
+            <span class="card-badge" id="healthBadge"></span>
+          </div>
+          <div class="health-list" id="healthList"></div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="card full-width animate-in delay-4" id="cardRecommendations">
+          <div class="card-header">
+            <div class="card-title"><span class="icon">💡</span> Recommendations</div>
+          </div>
+          <div class="recommendations-list" id="recommendationsList"></div>
+        </div>
+
+      </div><!-- /dashboard-grid -->
+    </section>
+
+    <!-- ============ Recent Analyses ============ -->
+    <section class="recent-section" id="recentSection" style="display:none">
+      <h3>📋 Recent Analyses</h3>
+      <div class="recent-list" id="recentList"></div>
+    </section>
+
+  </div><!-- /app -->
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

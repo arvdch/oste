@@ -1,0 +1,1656 @@
+[
+  {
+    "id": 1,
+    "name": "Healthy mature framework",
+    "input": "expressjs/express",
+    "status": "completed",
+    "seconds": 4,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 4,
+    "level": "MINIMAL",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 100,
+      "level": "HIGH"
+    },
+    "components": {
+      "health": 7,
+      "vulnerabilities": 1,
+      "exploitability": 0,
+      "maintenance": 8,
+      "license": 5
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 0,
+      "C": 0,
+      "H": 0,
+      "M": 0,
+      "L": 0,
+      "pkgs": 28
+    },
+    "selfAdvisories": {
+      "pkg": "express",
+      "current": 0,
+      "historical": 5
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1261
+    },
+    "summary": "Express is a widely used Node.js framework with strong health metrics and no known vulnerabilities in the latest release. The project is actively maintained, has robust community support, and uses an MIT license with no compliance concerns.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-expressjs_express-2026-11-14T08-55-58-331Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-expressjs_express-2026-11-14T08-55-58-331Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 4 <= 34",
+      "AI source=llm",
+      "report file oste-opensource-expressjs_express-2026-11-14T08-55-58-331Z.json",
+      "report file oste-opensource-expressjs_express-2026-11-14T08-55-58-331Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 2,
+    "name": "Popular lib w/ historical CVEs (lodash)",
+    "input": "lodash/lodash",
+    "status": "completed",
+    "seconds": 7,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 18,
+    "level": "MINIMAL",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 100,
+      "level": "HIGH"
+    },
+    "components": {
+      "health": 10,
+      "vulnerabilities": 7,
+      "exploitability": 0,
+      "maintenance": 40,
+      "license": 55
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 0,
+      "C": 0,
+      "H": 0,
+      "M": 0,
+      "L": 0,
+      "pkgs": 0
+    },
+    "selfAdvisories": {
+      "pkg": "lodash",
+      "current": 0,
+      "historical": 10
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1426
+    },
+    "summary": "Lodash is a widely used JavaScript utility library with strong health metrics and active maintenance. No current vulnerabilities are reported, but the project lacks a formal security policy and code of conduct, and the license is unspecified. Overall risk is minimal, supporting approval with minor improvements.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-lodash_lodash-2026-11-14T08-56-11-537Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-lodash_lodash-2026-11-14T08-56-11-537Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 18 >= 5",
+      "score 18 <= 59",
+      "AI source=llm",
+      "report file oste-opensource-lodash_lodash-2026-11-14T08-56-11-537Z.json",
+      "report file oste-opensource-lodash_lodash-2026-11-14T08-56-11-537Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 3,
+    "name": "Maintenance-mode lib (moment)",
+    "input": "moment/moment",
+    "status": "completed",
+    "seconds": 7,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 7,
+    "level": "MINIMAL",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 100,
+      "level": "HIGH"
+    },
+    "components": {
+      "health": 10,
+      "vulnerabilities": 3,
+      "exploitability": 0,
+      "maintenance": 20,
+      "license": 5
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 0,
+      "C": 0,
+      "H": 0,
+      "M": 0,
+      "L": 0,
+      "pkgs": 0
+    },
+    "selfAdvisories": {
+      "pkg": "moment",
+      "current": 0,
+      "historical": 5
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1271
+    },
+    "summary": "Moment is a mature, widely used JavaScript date library with strong health metrics and no known vulnerabilities in the latest release. Community support is limited by missing governance artifacts, but the project remains stable and well‑maintained.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-moment_moment-2026-11-14T08-56-18-090Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-moment_moment-2026-11-14T08-56-18-090Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 7 >= 5",
+      "score 7 <= 69",
+      "AI source=llm",
+      "report file oste-opensource-moment_moment-2026-11-14T08-56-18-090Z.json",
+      "report file oste-opensource-moment_moment-2026-11-14T08-56-18-090Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 4,
+    "name": "Legacy lib w/ many advisories (jquery, URL input)",
+    "input": "https://github.com/jquery/jquery",
+    "status": "completed",
+    "seconds": 54,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 6,
+    "level": "MINIMAL",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 100,
+      "level": "HIGH"
+    },
+    "components": {
+      "health": 6,
+      "vulnerabilities": 4,
+      "exploitability": 0,
+      "maintenance": 20,
+      "license": 5
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 0,
+      "C": 0,
+      "H": 0,
+      "M": 0,
+      "L": 0,
+      "pkgs": 0
+    },
+    "selfAdvisories": {
+      "pkg": "jquery",
+      "current": 0,
+      "historical": 8
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1160
+    },
+    "summary": "jQuery is a widely used JavaScript library with strong community support and active maintenance. No known vulnerabilities are present in the latest release, and the MIT license poses minimal compliance risk. The only notable gap is the missing security policy.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-https___github_com_jquery_jquery-2026-11-14T08-57-12-054Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-https___github_com_jquery_jquery-2026-11-14T08-57-12-054Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 6 >= 5",
+      "score 6 <= 59",
+      "AI source=llm",
+      "report file oste-opensource-https___github_com_jquery_jquery-2026-11-14T08-57-12-054Z.json",
+      "report file oste-opensource-https___github_com_jquery_jquery-2026-11-14T08-57-12-054Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 5,
+    "name": "Python project, PyPI ecosystem (flask)",
+    "input": "pallets/flask",
+    "status": "completed",
+    "seconds": 22,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 7,
+    "level": "MINIMAL",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 100,
+      "level": "HIGH"
+    },
+    "components": {
+      "health": 7,
+      "vulnerabilities": 5,
+      "exploitability": 0,
+      "maintenance": 20,
+      "license": 5
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 0,
+      "C": 0,
+      "H": 0,
+      "M": 0,
+      "L": 0,
+      "pkgs": 0
+    },
+    "selfAdvisories": {
+      "pkg": "Flask",
+      "current": 0,
+      "historical": 10
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1290
+    },
+    "summary": "Flask is a widely used Python web framework with strong community support and active maintenance. No current vulnerabilities are reported, though it lacks a formal security policy. Overall risk is minimal, suitable for enterprise adoption.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-pallets_flask-2026-11-14T08-57-34-291Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-pallets_flask-2026-11-14T08-57-34-291Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 7 <= 39",
+      "AI source=llm",
+      "report file oste-opensource-pallets_flask-2026-11-14T08-57-34-291Z.json",
+      "report file oste-opensource-pallets_flask-2026-11-14T08-57-34-291Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 6,
+    "name": "Go module project (gin)",
+    "input": "gin-gonic/gin",
+    "status": "completed",
+    "seconds": 5,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 35,
+    "level": "MEDIUM",
+    "decision": "APPROVE_WITH_CONDITIONS",
+    "confidence": {
+      "score": 100,
+      "level": "HIGH"
+    },
+    "components": {
+      "health": 8,
+      "vulnerabilities": 96,
+      "exploitability": 0,
+      "maintenance": 27,
+      "license": 5
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 8,
+      "C": 1,
+      "H": 5,
+      "M": 2,
+      "L": 0,
+      "pkgs": 32
+    },
+    "selfAdvisories": {
+      "pkg": "github.com/gin-gonic/gin",
+      "current": 0,
+      "historical": 8
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2092
+    },
+    "summary": "Gin‑gonic is a popular, high‑performance Go web framework with strong community support and active maintenance. However, it lacks a security policy and depends on a package with several high‑severity vulnerabilities, including one critical issue. Addressing these gaps is required before enterprise adoption.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-gin-gonic_gin-2026-11-14T09-02-26-919Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-gin-gonic_gin-2026-11-14T09-02-26-919Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 35 <= 39",
+      "AI source=llm",
+      "report file oste-opensource-gin-gonic_gin-2026-11-14T09-02-26-919Z.json",
+      "report file oste-opensource-gin-gonic_gin-2026-11-14T09-02-26-919Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 7,
+    "name": "Rust project w/ Cargo.lock (ripgrep)",
+    "input": "BurntSushi/ripgrep",
+    "status": "completed",
+    "seconds": 8,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 5,
+    "level": "MINIMAL",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 100,
+      "level": "HIGH"
+    },
+    "components": {
+      "health": 9,
+      "vulnerabilities": 3,
+      "exploitability": 0,
+      "maintenance": 10,
+      "license": 5
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 0,
+      "C": 0,
+      "H": 0,
+      "M": 0,
+      "L": 0,
+      "pkgs": 60
+    },
+    "selfAdvisories": {
+      "pkg": "ripgrep",
+      "current": 0,
+      "historical": 1
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1336
+    },
+    "summary": "ripgrep is a mature, widely used Rust CLI tool with strong health metrics and no known vulnerabilities in the latest release. Community support is moderate, though it lacks a formal security policy and code of conduct. The project poses minimal risk for enterprise adoption.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-BurntSushi_ripgrep-2026-11-14T08-59-37-048Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-BurntSushi_ripgrep-2026-11-14T08-59-37-048Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 5 <= 39",
+      "AI source=llm",
+      "report file oste-opensource-BurntSushi_ripgrep-2026-11-14T08-59-37-048Z.json",
+      "report file oste-opensource-BurntSushi_ripgrep-2026-11-14T08-59-37-048Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 8,
+    "name": "Deliberately vulnerable app (OWASP NodeGoat)",
+    "input": "OWASP/NodeGoat",
+    "status": "completed",
+    "seconds": 156,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 63,
+    "level": "HIGH",
+    "decision": "REVIEW_REQUIRED",
+    "confidence": {
+      "score": 100,
+      "level": "HIGH"
+    },
+    "components": {
+      "health": 24,
+      "vulnerabilities": 100,
+      "exploitability": 72,
+      "maintenance": 90,
+      "license": 5
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 81,
+      "C": 7,
+      "H": 45,
+      "M": 23,
+      "L": 6,
+      "pkgs": 380
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2045
+    },
+    "summary": "NodeGoat is an educational OWASP project with solid community guidelines but suffers from outdated releases and numerous critical dependencies. The lack of a security policy and recent activity increases risk, requiring remediation before enterprise use.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-OWASP_NodeGoat-2026-11-14T09-02-12-387Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-OWASP_NodeGoat-2026-11-14T09-02-12-387Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 63 >= 40",
+      "AI source=llm",
+      "report file oste-opensource-OWASP_NodeGoat-2026-11-14T09-02-12-387Z.json",
+      "report file oste-opensource-OWASP_NodeGoat-2026-11-14T09-02-12-387Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 9,
+    "name": "Offensive security tool (wifiphisher)",
+    "input": "wifiphisher/wifiphisher",
+    "status": "completed",
+    "seconds": 5,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 40,
+    "level": "MEDIUM",
+    "decision": "APPROVE_WITH_CONDITIONS",
+    "confidence": {
+      "score": 50,
+      "level": "MEDIUM"
+    },
+    "components": {
+      "health": 14,
+      "vulnerabilities": "n/a",
+      "exploitability": "n/a",
+      "maintenance": 68,
+      "license": 45
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 0,
+      "C": 0,
+      "H": 0,
+      "M": 0,
+      "L": 0,
+      "pkgs": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1190
+    },
+    "summary": "The project is popular with many stars but shows limited recent activity and no recent releases. No known vulnerabilities are present, but the lack of a security policy and contributing guidelines are concerns. License GPL‑3.0 is acceptable for most enterprises but requires compliance tracking.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-wifiphisher_wifiphisher-2026-11-14T09-02-17-087Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-wifiphisher_wifiphisher-2026-11-14T09-02-17-087Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 40 >= 20",
+      "AI source=llm",
+      "report file oste-opensource-wifiphisher_wifiphisher-2026-11-14T09-02-17-087Z.json",
+      "report file oste-opensource-wifiphisher_wifiphisher-2026-11-14T09-02-17-087Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 10,
+    "name": "EICAR test file SHA-256 (must be flagged)",
+    "input": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+    "status": "completed",
+    "seconds": 3,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 83,
+    "level": "CRITICAL",
+    "decision": "REJECT",
+    "confidence": {
+      "score": 33,
+      "level": "LOW"
+    },
+    "components": {
+      "malware": 100,
+      "behavior": "n/a",
+      "reputation": 50,
+      "distribution": "n/a"
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 66,
+      "suspicious": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1167
+    },
+    "summary": "The file is identified as the EICAR test string, a known malicious payload used for testing. VirusTotal reports 66/68 detections, confirming its malicious nature.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4-2026-11-14T09-02-29-584Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4-2026-11-14T09-02-29-584Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 83 >= 60",
+      "AI source=llm",
+      "report file oste-freeware-275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4-2026-11-14T09-02-29-584Z.json",
+      "report file oste-freeware-275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4-2026-11-14T09-02-29-584Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 11,
+    "name": "WannaCry ransomware SHA-256 (must be flagged)",
+    "input": "24d004a104d4d54034dbcffc2a4b19a11f39008a575aa614ea04703480b1022c",
+    "status": "completed",
+    "seconds": 2,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 92,
+    "level": "CRITICAL",
+    "decision": "REJECT",
+    "confidence": {
+      "score": 33,
+      "level": "LOW"
+    },
+    "components": {
+      "malware": 100,
+      "behavior": "n/a",
+      "reputation": 75,
+      "distribution": "n/a"
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 69,
+      "suspicious": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1243
+    },
+    "summary": "The file lhdfrgui.exe is a 3.7 MB Win32 executable flagged as malicious by multiple AV engines, including ransomware and exploit detections. Its reputation score is heavily negative and it is signed by Microsoft, but the malicious indicators outweigh any trust. Immediate rejection is advised.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-24d004a104d4d54034dbcffc2a4b19a11f39008a575aa614ea-2026-11-14T15-23-55-764Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-24d004a104d4d54034dbcffc2a4b19a11f39008a575aa614ea-2026-11-14T15-23-55-764Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 92 >= 60",
+      "AI source=llm",
+      "report file oste-freeware-24d004a104d4d54034dbcffc2a4b19a11f39008a575aa614ea-2026-11-14T15-23-55-764Z.json",
+      "report file oste-freeware-24d004a104d4d54034dbcffc2a4b19a11f39008a575aa614ea-2026-11-14T15-23-55-764Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 12,
+    "name": "Empty file SHA-256 (benign)",
+    "input": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": "completed",
+    "seconds": 4,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 20,
+    "level": "LOW",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 33,
+      "level": "LOW"
+    },
+    "components": {
+      "malware": 5,
+      "behavior": "n/a",
+      "reputation": 50,
+      "distribution": "n/a"
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 0,
+      "suspicious": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 964
+    },
+    "summary": "The file is a zero‑filled archive with no detections across 55 VT engines. Reputation metrics indicate a trusted source. No malicious behavior observed.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca4-2026-11-14T09-03-30-919Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca4-2026-11-14T09-03-30-919Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 20 <= 34",
+      "AI source=llm",
+      "report file oste-freeware-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca4-2026-11-14T09-03-30-919Z.json",
+      "report file oste-freeware-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca4-2026-11-14T09-03-30-919Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 13,
+    "name": "EICAR MD5 (hash type detection)",
+    "input": "44d88612fea8a8f36de82e1278abb02f",
+    "status": "completed",
+    "seconds": 57,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 83,
+    "level": "CRITICAL",
+    "decision": "REJECT",
+    "confidence": {
+      "score": 33,
+      "level": "LOW"
+    },
+    "components": {
+      "malware": 100,
+      "behavior": "n/a",
+      "reputation": 50,
+      "distribution": "n/a"
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 66,
+      "suspicious": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1139
+    },
+    "summary": "The file is the well‑known EICAR test string, flagged as malicious by multiple AV engines. VirusTotal reports 66/68 detections, confirming its malicious nature. No behavioral data is available, but the reputation score is low.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-44d88612fea8a8f36de82e1278abb02f-2026-11-14T09-04-28-167Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-44d88612fea8a8f36de82e1278abb02f-2026-11-14T09-04-28-167Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 83 >= 60",
+      "AI source=llm",
+      "report file oste-freeware-44d88612fea8a8f36de82e1278abb02f-2026-11-14T09-04-28-167Z.json",
+      "report file oste-freeware-44d88612fea8a8f36de82e1278abb02f-2026-11-14T09-04-28-167Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 14,
+    "name": "Unknown hash (not in VirusTotal)",
+    "input": "a3f5c8d1e9b2740615fa8c3d7e1b9042c6d8f1a3e5b79c0d2f4a6b8c1e3d5f70",
+    "status": "completed",
+    "seconds": 4,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:not_found",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 50,
+    "level": "MEDIUM",
+    "decision": "REVIEW_REQUIRED",
+    "confidence": {
+      "score": 0,
+      "level": "LOW"
+    },
+    "components": {
+      "malware": "n/a",
+      "behavior": "n/a",
+      "reputation": "n/a",
+      "distribution": "n/a"
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "not_found"
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 849
+    },
+    "summary": "The file hash could not be found in VirusTotal and no hybrid analysis was performed. No detections, signatures, or reputation data are available, leaving its safety uncertain.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-a3f5c8d1e9b2740615fa8c3d7e1b9042c6d8f1a3e5b79c0d2f-2026-11-14T09-06-59-466Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-a3f5c8d1e9b2740615fa8c3d7e1b9042c6d8f1a3e5b79c0d2f-2026-11-14T09-06-59-466Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "confidence LOW is not HIGH",
+      "AI source=llm",
+      "report file oste-freeware-a3f5c8d1e9b2740615fa8c3d7e1b9042c6d8f1a3e5b79c0d2f-2026-11-14T09-06-59-466Z.json",
+      "report file oste-freeware-a3f5c8d1e9b2740615fa8c3d7e1b9042c6d8f1a3e5b79c0d2f-2026-11-14T09-06-59-466Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 15,
+    "name": "Legit installer URL (7-Zip)",
+    "input": "https://www.7-zip.org/a/7z2408-x64.exe",
+    "status": "completed",
+    "seconds": 1,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 34,
+    "level": "LOW",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 67,
+      "level": "MEDIUM"
+    },
+    "components": {
+      "malware": 20,
+      "behavior": "n/a",
+      "reputation": 55,
+      "distribution": 50
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 1,
+      "suspicious": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 961
+    },
+    "summary": "The file 7z2408-x64.exe is a legitimate 7‑Zip installer but VirusTotal reports a single malicious detection. No behavioral data is available and the publisher is unsigned, so caution is advised.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-https___www_7-zip_org_a_7z2408-x64_exe-2026-11-14T09-07-00-540Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-https___www_7-zip_org_a_7z2408-x64_exe-2026-11-14T09-07-00-540Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 34 <= 49",
+      "AI source=llm",
+      "report file oste-freeware-https___www_7-zip_org_a_7z2408-x64_exe-2026-11-14T09-07-00-540Z.json",
+      "report file oste-freeware-https___www_7-zip_org_a_7z2408-x64_exe-2026-11-14T09-07-00-540Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 16,
+    "name": "Known-malicious test URL (WICAR)",
+    "input": "http://malware.wicar.org/data/ms14_064_ole_not_xp.html",
+    "status": "completed",
+    "seconds": 33,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 100,
+    "level": "CRITICAL",
+    "decision": "REJECT",
+    "confidence": {
+      "score": 67,
+      "level": "MEDIUM"
+    },
+    "components": {
+      "malware": 100,
+      "behavior": "n/a",
+      "reputation": 100,
+      "distribution": 100
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 20,
+      "suspicious": 1,
+      "source": "existing-report"
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1111
+    },
+    "summary": "The URL is flagged as malicious by multiple AV engines and has a negative reputation. Domain reputation is also poor, indicating high threat potential.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-http___malware_wicar_org_data_ms14_064_ole_not_xp_-2026-11-14T09-06-06-373Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-http___malware_wicar_org_data_ms14_064_ole_not_xp_-2026-11-14T09-06-06-373Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 100 >= 35",
+      "AI source=llm",
+      "report file oste-freeware-http___malware_wicar_org_data_ms14_064_ole_not_xp_-2026-11-14T09-06-06-373Z.json",
+      "report file oste-freeware-http___malware_wicar_org_data_ms14_064_ole_not_xp_-2026-11-14T09-06-06-373Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 17,
+    "name": "Name search flow (resolves via GitHub search)",
+    "input": "prettier",
+    "status": "completed",
+    "seconds": 28,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 13,
+    "level": "MINIMAL",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 71,
+      "level": "MEDIUM"
+    },
+    "components": {
+      "health": 13,
+      "vulnerabilities": 12,
+      "exploitability": 0,
+      "maintenance": 38,
+      "license": 5
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 1,
+      "C": 0,
+      "H": 0,
+      "M": 1,
+      "L": 0,
+      "pkgs": 89
+    },
+    "selfAdvisories": {
+      "pkg": "prettier",
+      "current": 0,
+      "historical": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1335
+    },
+    "summary": "Prettier is a widely used code formatter with strong adoption and an MIT license. The project shows solid health but lacks a commit in the last 90 days and has a single medium‑severity dependency vulnerability. Overall risk is minimal, supporting approval.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-prettier_prettier-2026-11-14T09-06-34-343Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-prettier_prettier-2026-11-14T09-06-34-343Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 13 <= 49",
+      "AI source=llm",
+      "report file oste-opensource-prettier_prettier-2026-11-14T09-06-34-343Z.json",
+      "report file oste-opensource-prettier_prettier-2026-11-14T09-06-34-343Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 18,
+    "name": "Nonexistent repo -> clean 404 error",
+    "input": "this-owner-does-not-exist-zz9/nope-repo-xx",
+    "status": "failed",
+    "seconds": 1,
+    "error": "GitHub repository not found: \"this-owner-does-not-exist-zz9/nope-repo-xx\". Check the owner/repo name (private repositories are not supported).",
+    "steps": [
+      "GitHub Analysis:failed"
+    ],
+    "pass": true,
+    "ok": [
+      "status=failed",
+      "error~/not found/i (GitHub repository not found: \"this-owner-does-not-exist-zz9/nope-repo-xx\". Check the owner/repo name (private repositories are not supported).)"
+    ],
+    "fail": []
+  },
+  {
+    "id": 19,
+    "name": "Garbage name -> clear error, no crash",
+    "input": "zzqqxx_nonexistent_tool_998877",
+    "status": "failed",
+    "seconds": 0,
+    "error": "No GitHub repository found for \"zzqqxx_nonexistent_tool_998877\". For freeware, provide a download URL or a file hash (MD5/SHA-1/SHA-256).",
+    "steps": [],
+    "pass": true,
+    "ok": [
+      "status=failed",
+      "error~/No GitHub repository found|provide a download URL/i (No GitHub repository found for \"zzqqxx_nonexistent_tool_998877\". For freeware, provide a download URL or a file hash (MD5/SHA-1/SHA-256).)"
+    ],
+    "fail": []
+  },
+  {
+    "id": 20,
+    "name": "Monorepo w/ registry self-package lookup (react)",
+    "input": "facebook/react",
+    "status": "completed",
+    "seconds": 2,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 5,
+    "level": "MINIMAL",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 50,
+      "level": "MEDIUM"
+    },
+    "components": {
+      "health": 6,
+      "vulnerabilities": "n/a",
+      "exploitability": "n/a",
+      "maintenance": 3,
+      "license": 5
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 0,
+      "C": 0,
+      "H": 0,
+      "M": 0,
+      "L": 0,
+      "pkgs": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1243
+    },
+    "summary": "React is a widely used UI library with strong health metrics and no known vulnerabilities. Community support is solid, though a security policy is missing. The project is actively maintained and licensed under MIT, posing minimal risk.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-facebook_react-2026-11-14T15-27-43-816Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-facebook_react-2026-11-14T15-27-43-816Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 5 <= 34",
+      "AI source=llm",
+      "report file oste-opensource-facebook_react-2026-11-14T15-27-43-816Z.json",
+      "report file oste-opensource-facebook_react-2026-11-14T15-27-43-816Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 21,
+    "name": "Officially archived/deprecated npm package (request)",
+    "input": "request/request",
+    "status": "completed",
+    "seconds": 4,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 39,
+    "level": "MEDIUM",
+    "decision": "APPROVE_WITH_CONDITIONS",
+    "confidence": {
+      "score": 100,
+      "level": "HIGH"
+    },
+    "components": {
+      "health": 10,
+      "vulnerabilities": 79,
+      "exploitability": 1,
+      "maintenance": 85,
+      "license": 5
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 7,
+      "C": 1,
+      "H": 2,
+      "M": 3,
+      "L": 1,
+      "pkgs": 20
+    },
+    "selfAdvisories": {
+      "pkg": "request",
+      "current": 1,
+      "historical": 2
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 2014
+    },
+    "summary": "The request library is popular but shows stagnation with no commits since 2020 and lacks formal security governance. Several high‑severity dependencies are vulnerable, including a critical issue in form-data. Adoption is possible with remediation and process improvements.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-request_request-2026-11-14T15-32-12-518Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-request_request-2026-11-14T15-32-12-518Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 39 >= 35",
+      "AI source=llm",
+      "report file oste-opensource-request_request-2026-11-14T15-32-12-518Z.json",
+      "report file oste-opensource-request_request-2026-11-14T15-32-12-518Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 22,
+    "name": "Abandoned archived package (left-pad/left-pad)",
+    "input": "left-pad/left-pad",
+    "status": "completed",
+    "seconds": 2,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 45,
+    "level": "MEDIUM",
+    "decision": "APPROVE_WITH_CONDITIONS",
+    "confidence": {
+      "score": 100,
+      "level": "HIGH"
+    },
+    "components": {
+      "health": 95,
+      "vulnerabilities": 0,
+      "exploitability": 0,
+      "maintenance": 95,
+      "license": 5
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 0,
+      "C": 0,
+      "H": 0,
+      "M": 0,
+      "L": 0,
+      "pkgs": 0
+    },
+    "selfAdvisories": {
+      "pkg": "left-pad",
+      "current": 0,
+      "historical": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1251
+    },
+    "summary": "The left-pad library is archived, has no recent commits or releases, and lacks community governance artifacts. While it has no known vulnerabilities and uses an MIT license, its maintenance and community health are poor. Adoption should be conditional on mitigating maintenance risks.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-left-pad_left-pad-2026-11-14T15-32-14-360Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-left-pad_left-pad-2026-11-14T15-32-14-360Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 45 >= 35",
+      "AI source=llm",
+      "report file oste-opensource-left-pad_left-pad-2026-11-14T15-32-14-360Z.json",
+      "report file oste-opensource-left-pad_left-pad-2026-11-14T15-32-14-360Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 23,
+    "name": "GPL-licensed offensive security tool (sqlmap)",
+    "input": "sqlmapproject/sqlmap",
+    "status": "completed",
+    "seconds": 5,
+    "error": null,
+    "steps": [
+      "GitHub Analysis:completed",
+      "OSV Scan:completed",
+      "NVD Enrichment:completed",
+      "EPSS Scoring:completed",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 24,
+    "level": "LOW",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 50,
+      "level": "MEDIUM"
+    },
+    "components": {
+      "health": 8,
+      "vulnerabilities": "n/a",
+      "exploitability": "n/a",
+      "maintenance": 15,
+      "license": 55
+    },
+    "resolvedType": "opensource",
+    "vulns": {
+      "total": 0,
+      "C": 0,
+      "H": 0,
+      "M": 0,
+      "L": 0,
+      "pkgs": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1268
+    },
+    "summary": "sqlmap is a mature, actively maintained Python tool with strong health metrics. No known vulnerabilities were detected, but the lack of a declared license and security policy introduces compliance risk.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-opensource-sqlmapproject_sqlmap-2026-11-14T15-28-55-079Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-opensource-sqlmapproject_sqlmap-2026-11-14T15-28-55-079Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 24 >= 10",
+      "score 24 <= 65",
+      "AI source=llm",
+      "report file oste-opensource-sqlmapproject_sqlmap-2026-11-14T15-28-55-079Z.json",
+      "report file oste-opensource-sqlmapproject_sqlmap-2026-11-14T15-28-55-079Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 24,
+    "name": "NotPetya wiper SHA-256 (forged MS signature)",
+    "input": "027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745",
+    "status": "completed",
+    "seconds": 2,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 92,
+    "level": "CRITICAL",
+    "decision": "REJECT",
+    "confidence": {
+      "score": 33,
+      "level": "LOW"
+    },
+    "components": {
+      "malware": 100,
+      "behavior": "n/a",
+      "reputation": 75,
+      "distribution": "n/a"
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 58,
+      "suspicious": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1203
+    },
+    "summary": "The file is a signed Windows DLL identified as NotPetya.bin with a high malicious detection rate (≈91%). Multiple AV engines flag it as ransomware/ trojan. Reputation is severely negative, indicating extreme risk.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b-2026-11-14T15-23-57-395Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b-2026-11-14T15-23-57-395Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 92 >= 80",
+      "AI source=llm",
+      "report file oste-freeware-027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b-2026-11-14T15-23-57-395Z.json",
+      "report file oste-freeware-027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b-2026-11-14T15-23-57-395Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 25,
+    "name": "WannaCry dropper SHA-256 (empty signatureInfo)",
+    "input": "ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa",
+    "status": "completed",
+    "seconds": 59,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 92,
+    "level": "CRITICAL",
+    "decision": "REJECT",
+    "confidence": {
+      "score": 33,
+      "level": "LOW"
+    },
+    "components": {
+      "malware": 100,
+      "behavior": "n/a",
+      "reputation": 75,
+      "distribution": "n/a"
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 66,
+      "suspicious": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1190
+    },
+    "summary": "The file diskpart.exe is flagged as malicious by multiple AV engines, including ransomware and exploit detections. Its reputation score is severely negative and it is signed by Microsoft, but the malicious behavior outweighs any trust.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5-2026-11-14T15-24-56-587Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5-2026-11-14T15-24-56-587Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 92 >= 80",
+      "AI source=llm",
+      "report file oste-freeware-ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5-2026-11-14T15-24-56-587Z.json",
+      "report file oste-freeware-ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5-2026-11-14T15-24-56-587Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 26,
+    "name": "EICAR test file SHA-1 (40-char hash + hardGate)",
+    "input": "3395856ce81f2b7382dee72602f798b642f14140",
+    "status": "completed",
+    "seconds": 3,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 85,
+    "level": "CRITICAL",
+    "decision": "REJECT",
+    "confidence": {
+      "score": 33,
+      "level": "LOW"
+    },
+    "components": {
+      "malware": 100,
+      "behavior": "n/a",
+      "reputation": 50,
+      "distribution": "n/a"
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 66,
+      "suspicious": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1131
+    },
+    "summary": "The file is identified as the EICAR test sample and is flagged malicious by multiple AV engines. VirusTotal reports 66/68 detections, confirming a high threat level. Enterprise use is not advisable.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-3395856ce81f2b7382dee72602f798b642f14140-2026-11-14T15-24-58-634Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-3395856ce81f2b7382dee72602f798b642f14140-2026-11-14T15-24-58-634Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 85 >= 80",
+      "AI source=llm",
+      "report file oste-freeware-3395856ce81f2b7382dee72602f798b642f14140-2026-11-14T15-24-58-634Z.json",
+      "report file oste-freeware-3395856ce81f2b7382dee72602f798b642f14140-2026-11-14T15-24-58-634Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 27,
+    "name": "EICAR ZIP archive SHA-256 (compressed payload)",
+    "input": "2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad",
+    "status": "completed",
+    "seconds": 60,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 85,
+    "level": "CRITICAL",
+    "decision": "REJECT",
+    "confidence": {
+      "score": 33,
+      "level": "LOW"
+    },
+    "components": {
+      "malware": 100,
+      "behavior": "n/a",
+      "reputation": 50,
+      "distribution": "n/a"
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 62,
+      "suspicious": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 1117
+    },
+    "summary": "The file eicar_com.zip is a known test malware (EICAR). VirusTotal reports 62/68 engines flag it as malicious. No behavioral data is available, reinforcing a reject decision.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd-2026-11-14T15-25-58-439Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd-2026-11-14T15-25-58-439Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 85 >= 80",
+      "AI source=llm",
+      "report file oste-freeware-2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd-2026-11-14T15-25-58-439Z.json",
+      "report file oste-freeware-2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd-2026-11-14T15-25-58-439Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 28,
+    "name": "Legitimate PuTTY x64 binary SHA-256 (clean)",
+    "input": "d01fdb5aae8f112526040a39b0bfb9e27d813003178645e65f8d1cfdb2a26c87",
+    "status": "completed",
+    "seconds": 1,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 20,
+    "level": "LOW",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 33,
+      "level": "LOW"
+    },
+    "components": {
+      "malware": 5,
+      "behavior": "n/a",
+      "reputation": 50,
+      "distribution": "n/a"
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 0,
+      "suspicious": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 941
+    },
+    "summary": "The file putty.exe is a Win32 EXE with no detections on VirusTotal. Reputation is low (7) and the file is unsigned. No behavioral data is available.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-d01fdb5aae8f112526040a39b0bfb9e27d813003178645e65f-2026-11-14T15-25-59-669Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-d01fdb5aae8f112526040a39b0bfb9e27d813003178645e65f-2026-11-14T15-25-59-669Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 20 <= 34",
+      "AI source=llm",
+      "report file oste-freeware-d01fdb5aae8f112526040a39b0bfb9e27d813003178645e65f-2026-11-14T15-25-59-669Z.json",
+      "report file oste-freeware-d01fdb5aae8f112526040a39b0bfb9e27d813003178645e65f-2026-11-14T15-25-59-669Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 29,
+    "name": "Legitimate 7-Zip installer SHA-256 (clean, high rep)",
+    "input": "67cb9d3452c9dd974b04f4a5fd842dbcba8184f2344ff72e3662d7cdb68b099b",
+    "status": "completed",
+    "seconds": 60,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 18,
+    "level": "MINIMAL",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 33,
+      "level": "LOW"
+    },
+    "components": {
+      "malware": 5,
+      "behavior": "n/a",
+      "reputation": 45,
+      "distribution": "n/a"
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 0,
+      "suspicious": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 941
+    },
+    "summary": "The file 7zipInstall.exe is a known distributor Win32 EXE with a high reputation score and no detections on VirusTotal. It is digitally signed by 7‑Zip and shows no malicious indicators. No behavioral data is available.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-67cb9d3452c9dd974b04f4a5fd842dbcba8184f2344ff72e36-2026-11-14T15-26-59-471Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-67cb9d3452c9dd974b04f4a5fd842dbcba8184f2344ff72e36-2026-11-14T15-26-59-471Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 18 <= 25",
+      "AI source=llm",
+      "report file oste-freeware-67cb9d3452c9dd974b04f4a5fd842dbcba8184f2344ff72e36-2026-11-14T15-26-59-471Z.json",
+      "report file oste-freeware-67cb9d3452c9dd974b04f4a5fd842dbcba8184f2344ff72e36-2026-11-14T15-26-59-471Z.pdf"
+    ],
+    "fail": []
+  },
+  {
+    "id": 30,
+    "name": "GitHub release binary URL routed to freeware flow",
+    "input": "https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz",
+    "status": "completed",
+    "seconds": 55,
+    "error": null,
+    "steps": [
+      "VirusTotal Analysis:completed",
+      "Hybrid Analysis:skipped",
+      "Risk Scoring:completed",
+      "AI Assessment:completed",
+      "Report Generation:completed"
+    ],
+    "score": 14,
+    "level": "MINIMAL",
+    "decision": "APPROVE",
+    "confidence": {
+      "score": 67,
+      "level": "MEDIUM"
+    },
+    "components": {
+      "malware": 5,
+      "behavior": "n/a",
+      "reputation": 35,
+      "distribution": 5
+    },
+    "resolvedType": "freeware",
+    "vt": {
+      "status": "completed",
+      "malicious": 0,
+      "suspicious": 0
+    },
+    "ai": {
+      "source": "llm",
+      "model": "openai/gpt-oss-120b",
+      "tokens": 993
+    },
+    "summary": "The ripgrep binary from the official GitHub release shows no malicious detections on VirusTotal. Domain reputation is high and the file is unsigned but originates from a trusted source. No behavioral data is available.",
+    "reports": {
+      "jsonPath": "/home/spirit/Desktop/test/reports/oste-freeware-https___github_com_BurntSushi_ripgrep_releases_dow-2026-11-14T15-29-49-772Z.json",
+      "pdfPath": "/home/spirit/Desktop/test/reports/oste-freeware-https___github_com_BurntSushi_ripgrep_releases_dow-2026-11-14T15-29-49-772Z.pdf"
+    },
+    "pass": true,
+    "ok": [
+      "status=completed",
+      "score 14 <= 49",
+      "resolvedType freeware == freeware",
+      "AI source=llm",
+      "report file oste-freeware-https___github_com_BurntSushi_ripgrep_releases_dow-2026-11-14T15-29-49-772Z.json",
+      "report file oste-freeware-https___github_com_BurntSushi_ripgrep_releases_dow-2026-11-14T15-29-49-772Z.pdf"
+    ],
+    "fail": []
+  }
+]
